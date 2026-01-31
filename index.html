@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latinbite - Auténticos tequeños venezolanos elaborados artesanalmente en Islandia. Sabor latino en el corazón del Atlántico Norte.">
+    <meta name="keywords" content="tequeños, venezolanos, Islandia, queso, productos lácteos, comida latina, Latinbite">
+    <meta name="author" content="Latinbite">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Latinbite - Sabor Venezolano en Islandia">
+    <meta property="og:description" content="Auténticos tequeños venezolanos elaborados artesanalmente en Islandia">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://latinbite.com">
+
+    <title>Latinbite | Tequeños Venezolanos en Islandia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Latinbite</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#inicio" class="logo">
+                    <span class="logo-icon">🧀</span>
+                    <span class="logo-text">Latin<span class="accent">bite</span></span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link btn-nav">Ordenar Ahora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">🇻🇪 Hecho con amor venezolano en Islandia 🇮🇸</span>
+                    <h1 class="hero-title">
+                        Auténticos <span class="highlight">Tequeños</span> Venezolanos
+                    </h1>
+                    <p class="hero-description">
+                        Llevamos el sabor tradicional de Venezuela al corazón del Atlántico Norte.
+                        Tequeños artesanales elaborados con queso de primera calidad y la receta
+                        que ha pasado de generación en generación.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#productos" class="btn btn-primary">
+                            <i class="fas fa-cheese"></i> Ver Productos
+                        </a>
+                        <a href="#nosotros" class="btn btn-secondary">
+                            <i class="fas fa-play-circle"></i> Nuestra Historia
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="5000">0</span>+
+                            <span class="stat-label">Tequeños vendidos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="500">0</span>+
+                            <span class="stat-label">Clientes felices</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100">0</span>%
+                            <span class="stat-label">Artesanal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="floating-badge badge-1">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="hero-img-placeholder">
+                            <i class="fas fa-cheese"></i>
+                            <span>Tequeños Artesanales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#productos" class="scroll-indicator">
+                <span>Descubre más</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Productos Section -->
+        <section id="productos" class="section productos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Nuestros Productos</span>
+                    <h2 class="section-title">Tequeños <span class="highlight">Artesanales</span></h2>
+                    <p class="section-description">
+                        Cada tequeño es elaborado a mano con ingredientes seleccionados,
+                        siguiendo la receta tradicional venezolana que nos hace únicos.
+                    </p>
+                </div>
+
+                <div class="productos-grid">
+                    <!-- Producto Principal -->
+                    <article class="producto-card featured">
+                        <div class="producto-badge">⭐ Más Vendido</div>
+                        <div class="producto-image">
+                            <div class="producto-img-placeholder">
+                                <i class="fas fa-cheese"></i>
+                            </div>
+                        </div>
+                        <div class="producto-content">
+                            <h3 class="producto-title">Tequeños Clásicos</h3>
+                            <p class="producto-description">
+                                Nuestros icónicos tequeños rellenos de queso gouda de primera calidad,
+                                envueltos en una masa crujiente y dorada. El sabor auténtico de Venezuela.
+                            </p>
+                            <ul class="producto-features">
+                                <li><i class="fas fa-check"></i> Queso Gouda premium</li>
+                                <li><i class="fas fa-check"></i> Masa artesanal</li>
+                                <li><i class="fas fa-check"></i> Sin conservantes</li>
+                                <li><i class="fas fa-check"></i> Congelados IQF</li>
+                            </ul>
+                            <div class="producto-sizes">
+                                <span class="size-label">Presentaciones:</span>
+                                <div class="sizes">
+                                    <span class="size">12 uds</span>
+                                    <span class="size">24 uds</span>
+                                    <span class="size">48 uds</span>
+                                </div>
+                            </div>
+                            <div class="producto-footer">
+                                <div class="producto-price">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price-value">1.990 ISK</span>
+                                </div>
+                                <a href="#contacto" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-shopping-bag"></i> Ordenar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Productos Adicionales -->
+                    <article class="producto-card">
+                        <div class="producto-badge coming-soon">Próximamente</div>
+                        <div class="producto-image">
+                            <div class="producto-img-placeholder">
+                                <i class="fas fa-drumstick-bite"></i>
+                            </div>
+                        </div>
+                        <div class="producto-content">
+                            <h3 class="producto-title">Tequeños de Jamón y Queso</h3>
+                            <p class="producto-description">
+                                La combinación perfecta de jamón serrano y queso gouda
+                                en nuestra masa tradicional.
+                            </p>
+                            <div class="producto-footer">
+                                <span class="coming-soon-text">En desarrollo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="producto-card">
+                        <div class="producto-badge coming-soon">Próximamente</div>
+                        <div class="producto-image">
+                            <div class="producto-img-placeholder">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="producto-content">
+                            <h3 class="producto-title">Tequeños Veganos</h3>
+                            <p class="producto-description">
+                                Versión plant-based de nuestros tequeños, con queso vegano
+                                y masa sin ingredientes de origen animal.
+                            </p>
+                            <div class="producto-footer">
+                                <span class="coming-soon-text">En desarrollo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="productos-cta">
+                    <p>¿Interesado en nuestros productos para tu negocio?</p>
+                    <a href="#contacto" class="btn btn-outline">
+                        <i class="fas fa-building"></i> Ventas Mayoristas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="section servicios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Lo Que Ofrecemos</span>
+                    <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+                    <p class="section-description">
+                        Más allá de nuestros productos, ofrecemos servicios pensados para
+                        llevar el auténtico sabor venezolano a cada rincón de Islandia.
+                    </p>
+                </div>
+
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 class="servicio-title">Delivery a Domicilio</h3>
+                        <p class="servicio-description">
+                            Entregamos tus tequeños congelados directamente en tu puerta.
+                            Servicio disponible en Reykjavik y áreas metropolitanas.
+                        </p>
+                        <ul class="servicio-features">
+                            <li><i class="fas fa-check-circle"></i> Envío refrigerado</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega en 24-48h</li>
+                            <li><i class="fas fa-check-circle"></i> Pedido mínimo: 24 uds</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="servicio-title">Venta a Restaurantes</h3>
+                        <p class="servicio-description">
+                            Proveemos tequeños a restaurantes, cafeterías y hoteles.
+                            Precios especiales para pedidos al por mayor.
+                        </p>
+                        <ul class="servicio-features">
+                            <li><i class="fas fa-check-circle"></i> Precios mayoristas</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega programada</li>
+                            <li><i class="fas fa-check-circle"></i> Facturación empresarial</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="servicio-title">Catering para Eventos</h3>
+                        <p class="servicio-description">
+                            Hacemos de tu evento algo especial con nuestros tequeños
+                            recién horneados. Bodas, cumpleaños, reuniones corporativas.
+                        </p>
+                        <ul class="servicio-features">
+                            <li><i class="fas fa-check-circle"></i> Servicio personalizado</li>
+                            <li><i class="fas fa-check-circle"></i> Tequeños calientes</li>
+                            <li><i class="fas fa-check-circle"></i> Salsas incluidas</li>
+                        </ul>
+                    </article>
+
+                    <article class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="servicio-title">Talleres de Cocina</h3>
+                        <p class="servicio-description">
+                            Aprende a hacer tequeños como un verdadero venezolano.
+                            Talleres grupales y privados disponibles.
+                        </p>
+                        <ul class="servicio-features">
+                            <li><i class="fas fa-check-circle"></i> Grupos de 6-12 personas</li>
+                            <li><i class="fas fa-check-circle"></i> Ingredientes incluidos</li>
+                            <li><i class="fas fa-check-circle"></i> Certificado de participación</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros Section -->
+        <section id="nosotros" class="section nosotros">
+            <div class="container">
+                <div class="nosotros-content">
+                    <div class="nosotros-text">
+                        <span class="section-badge">Nuestra Historia</span>
+                        <h2 class="section-title">De Venezuela a <span class="highlight">Islandia</span></h2>
+                        <p class="nosotros-lead">
+                            Somos una familia venezolana que llegó a Islandia con un sueño:
+                            compartir el sabor de nuestra tierra con el mundo.
+                        </p>
+                        <p>
+                            Todo comenzó en 2022, cuando decidimos traer a Islandia uno de los
+                            snacks más queridos de Venezuela: el tequeño. Con la receta de nuestra
+                            abuela y la pasión por la buena comida, nació <strong>Latinbite</strong>.
+                        </p>
+                        <p>
+                            Hoy, desde nuestra pequeña fábrica en Reykjavik, elaboramos cada tequeño
+                            con el mismo amor y dedicación que aprendimos en casa. Usamos queso de
+                            la mejor calidad islandesa y técnicas artesanales que garantizan ese
+                            sabor crujiente por fuera y cremoso por dentro que nos caracteriza.
+                        </p>
+
+                        <div class="nosotros-values">
+                            <div class="value">
+                                <div class="value-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h4>Pasión</h4>
+                                    <p>Cada tequeño lleva nuestro amor por la cocina venezolana</p>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <div class="value-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h4>Calidad</h4>
+                                    <p>Ingredientes premium, sin compromiso</p>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <div class="value-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h4>Tradición</h4>
+                                    <p>Recetas que han pasado de generación en generación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nosotros-images">
+                        <div class="nosotros-img-main">
+                            <div class="img-placeholder">
+                                <i class="fas fa-users"></i>
+                                <span>Nuestro Equipo</span>
+                            </div>
+                        </div>
+                        <div class="nosotros-img-secondary">
+                            <div class="img-placeholder">
+                                <i class="fas fa-industry"></i>
+                                <span>Nuestra Fábrica</span>
+                            </div>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Años de experiencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Section -->
+        <section id="galeria" class="section galeria">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Galería</span>
+                    <h2 class="section-title">Nuestro <span class="highlight">Proceso</span></h2>
+                    <p class="section-description">
+                        Conoce cómo elaboramos nuestros tequeños, desde la selección
+                        de ingredientes hasta el producto final.
+                    </p>
+                </div>
+
+                <div class="galeria-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="proceso">Proceso</button>
+                    <button class="filter-btn" data-filter="producto">Producto</button>
+                    <button class="filter-btn" data-filter="equipo">Equipo</button>
+                </div>
+
+                <div class="galeria-grid">
+                    <div class="galeria-item" data-category="proceso">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-blender"></i>
+                            <span>Preparación de la masa</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Preparación</h4>
+                            <p>Mezclamos los ingredientes con precisión</p>
+                        </div>
+                    </div>
+
+                    <div class="galeria-item" data-category="proceso">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-hands"></i>
+                            <span>Enrollado artesanal</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Enrollado</h4>
+                            <p>Cada tequeño se enrolla a mano</p>
+                        </div>
+                    </div>
+
+                    <div class="galeria-item" data-category="producto">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-cheese"></i>
+                            <span>Queso premium</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Ingredientes</h4>
+                            <p>Queso gouda de primera calidad</p>
+                        </div>
+                    </div>
+
+                    <div class="galeria-item large" data-category="producto">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-fire-alt"></i>
+                            <span>Tequeños dorados</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Producto Final</h4>
+                            <p>Crujientes y deliciosos</p>
+                        </div>
+                    </div>
+
+                    <div class="galeria-item" data-category="equipo">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-user-chef"></i>
+                            <span>Nuestros chefs</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Equipo</h4>
+                            <p>Profesionales apasionados</p>
+                        </div>
+                    </div>
+
+                    <div class="galeria-item" data-category="proceso">
+                        <div class="galeria-img-placeholder">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Congelación IQF</span>
+                        </div>
+                        <div class="galeria-overlay">
+                            <h4>Congelación</h4>
+                            <p>Tecnología IQF para máxima frescura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section class="section testimonios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Testimonios</span>
+                    <h2 class="section-title">Lo Que Dicen <span class="highlight">Nuestros Clientes</span></h2>
+                </div>
+
+                <div class="testimonios-slider">
+                    <div class="testimonios-track">
+                        <div class="testimonio-card">
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonio-text">
+                                "Los mejores tequeños que he probado fuera de Venezuela.
+                                Me transportaron directamente a mi infancia en Caracas."
+                            </p>
+                            <div class="testimonio-author">
+                                <div class="author-avatar">MR</div>
+                                <div class="author-info">
+                                    <strong>María Rodríguez</strong>
+                                    <span>Venezolana en Reykjavik</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonio-text">
+                                "Absolutely delicious! I had never tried tequeños before,
+                                and now I'm completely hooked. Amazing quality!"
+                            </p>
+                            <div class="testimonio-author">
+                                <div class="author-avatar">ES</div>
+                                <div class="author-info">
+                                    <strong>Erik Sigurdsson</strong>
+                                    <span>Chef en Reykjavik</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonio-text">
+                                "Pedimos tequeños para nuestra boda y fueron un éxito total.
+                                ¡Todos los invitados quedaron encantados!"
+                            </p>
+                            <div class="testimonio-author">
+                                <div class="author-avatar">CL</div>
+                                <div class="author-info">
+                                    <strong>Carlos y Linda</strong>
+                                    <span>Clientes de Catering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonios-nav">
+                        <button class="nav-btn prev" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="testimonios-dots"></div>
+                        <button class="nav-btn next" aria-label="Siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section contacto">
+            <div class="container">
+                <div class="contacto-wrapper">
+                    <div class="contacto-info">
+                        <span class="section-badge">Contáctanos</span>
+                        <h2 class="section-title">¿Listo para <span class="highlight">Ordenar</span>?</h2>
+                        <p class="contacto-description">
+                            Estamos aquí para atenderte. Escríbenos para hacer tu pedido,
+                            resolver dudas o solicitar información sobre nuestros servicios.
+                        </p>
+
+                        <div class="contacto-details">
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <strong>Ubicación</strong>
+                                    <span>Reykjavik, Islandia</span>
+                                </div>
+                            </div>
+
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <strong>Email</strong>
+                                    <a href="mailto:hola@latinbite.com">hola@latinbite.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <strong>Teléfono</strong>
+                                    <a href="tel:+3545551234">+354 555 1234</a>
+                                </div>
+                            </div>
+
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <strong>Horario</strong>
+                                    <span>Lun - Vie: 9:00 - 18:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contacto-social">
+                            <span>Síguenos:</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-form-wrapper">
+                        <form id="contactForm" class="contacto-form">
+                            <div class="form-header">
+                                <h3>Envíanos un Mensaje</h3>
+                                <p>Responderemos lo antes posible</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required
+                                       placeholder="Tu nombre">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required
+                                           placeholder="tu@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono"
+                                           placeholder="+354 XXX XXXX">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto">Asunto *</label>
+                                <select id="asunto" name="asunto" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="pedido">Hacer un pedido</option>
+                                    <option value="mayorista">Ventas mayoristas</option>
+                                    <option value="catering">Catering para eventos</option>
+                                    <option value="taller">Talleres de cocina</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required
+                                          placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacidad" required>
+                                    <span class="checkmark"></span>
+                                    Acepto la <a href="#">política de privacidad</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Listo para probar los mejores tequeños de Islandia?</h2>
+                    <p>Haz tu pedido hoy y recibe tus tequeños en la puerta de tu casa</p>
+                    <a href="#contacto" class="btn btn-light btn-lg">
+                        <i class="fas fa-shopping-bag"></i> Ordenar Ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-icon">🧀</span>
+                        <span class="logo-text">Latin<span class="accent">bite</span></span>
+                    </a>
+                    <p>
+                        Llevamos el auténtico sabor venezolano al corazón de Islandia.
+                        Tequeños artesanales hechos con amor y tradición.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#nosotros">Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios">Delivery</a></li>
+                            <li><a href="#servicios">Mayoristas</a></li>
+                            <li><a href="#servicios">Catering</a></li>
+                            <li><a href="#servicios">Talleres</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Latinbite. Todos los derechos reservados.</p>
+                <p>Hecho con <i class="fas fa-heart"></i> por venezolanos en Islandia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/3545551234" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
