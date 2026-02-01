@@ -478,7 +478,7 @@ const ContactForm = {
         // Required validation
         if (field.hasAttribute('required') && !value) {
             isValid = false;
-            errorMessage = 'Este campo es requerido';
+            errorMessage = 'This field is required';
         }
 
         // Email validation
@@ -486,7 +486,7 @@ const ContactForm = {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(value)) {
                 isValid = false;
-                errorMessage = 'Por favor, introduce un email válido';
+                errorMessage = 'Please enter a valid email address';
             }
         }
 
@@ -495,7 +495,7 @@ const ContactForm = {
             const phoneRegex = /^[\d\s+()-]{6,}$/;
             if (!phoneRegex.test(value)) {
                 isValid = false;
-                errorMessage = 'Por favor, introduce un teléfono válido';
+                errorMessage = 'Please enter a valid phone number';
             }
         }
 
@@ -559,7 +559,7 @@ const ContactForm = {
             this.showSuccess();
             DOM.contactForm.reset();
         } catch (error) {
-            this.showFormError('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+            this.showFormError('There was an error sending your message. Please try again.');
         } finally {
             submitBtn.innerHTML = originalBtnText;
             submitBtn.disabled = false;
@@ -586,8 +586,8 @@ const ContactForm = {
         `;
         successDiv.innerHTML = `
             <i class="fas fa-check-circle"></i>
-            <strong>¡Mensaje enviado!</strong>
-            <p>Nos pondremos en contacto contigo pronto.</p>
+            <strong>Message sent!</strong>
+            <p>We'll get in touch with you soon.</p>
         `;
 
         DOM.contactForm.insertBefore(successDiv, DOM.contactForm.firstChild);
@@ -715,11 +715,11 @@ const Cart = {
     },
 
     saveToStorage() {
-        localStorage.setItem('latinbite_cart', JSON.stringify(this.items));
+        localStorage.setItem('tequevik_cart', JSON.stringify(this.items));
     },
 
     loadFromStorage() {
-        const stored = localStorage.getItem('latinbite_cart');
+        const stored = localStorage.getItem('tequevik_cart');
         if (stored) {
             this.items = JSON.parse(stored);
         }
@@ -788,7 +788,7 @@ const App = {
         // E-commerce ready modules
         Cart.init();
 
-        console.log('🧀 Latinbite website initialized successfully!');
+        console.log('🧀 Tequevik website initialized successfully!');
     }
 };
 
