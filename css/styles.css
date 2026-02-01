@@ -7,46 +7,46 @@
    CSS CUSTOM PROPERTIES (Variables)
    ============================================ */
 :root {
-    /* Primary Colors - Warm & Inviting */
-    --color-primary: #D4A574;
-    --color-primary-dark: #B8956A;
-    --color-primary-light: #E8C9A8;
+    /* Primary Colors - Brand Palette */
+    --color-primary: #F5B700;
+    --color-primary-dark: #E5A800;
+    --color-primary-light: #FEC33A;
 
-    /* Secondary Colors - Venezuelan inspired */
-    --color-secondary: #8B4513;
-    --color-secondary-dark: #6B3410;
-    --color-secondary-light: #A0522D;
+    /* Secondary Colors - Brand Yellow Tones */
+    --color-secondary: #F8DC6F;
+    --color-secondary-dark: #F5B700;
+    --color-secondary-light: #FCEBA6;
 
-    /* Accent Colors */
-    --color-accent: #C41E3A;
-    --color-accent-light: #E63950;
+    /* Accent Colors - Using primary yellow */
+    --color-accent: #F5B700;
+    --color-accent-light: #FEC33A;
 
-    /* Neutral Colors */
-    --color-white: #FFFFFF;
+    /* Neutral Colors - Brand Palette */
+    --color-white: #FFFFFA;
     --color-black: #1A1A1A;
-    --color-gray-100: #F8F9FA;
-    --color-gray-200: #E9ECEF;
-    --color-gray-300: #DEE2E6;
-    --color-gray-400: #CED4DA;
-    --color-gray-500: #ADB5BD;
-    --color-gray-600: #6C757D;
-    --color-gray-700: #495057;
-    --color-gray-800: #343A40;
-    --color-gray-900: #212529;
+    --color-gray-100: #FCEBA6;
+    --color-gray-200: #E6E6E1;
+    --color-gray-300: #D5D5D0;
+    --color-gray-400: #B5B5B0;
+    --color-gray-500: #8A8A85;
+    --color-gray-600: #5A5A55;
+    --color-gray-700: #3A3A35;
+    --color-gray-800: #1C1B17;
+    --color-gray-900: #1A1A1A;
 
-    /* Background Colors */
-    --bg-light: #FDF8F3;
-    --bg-cream: #FAF5F0;
-    --bg-dark: #2C2417;
+    /* Background Colors - Brand Palette */
+    --bg-light: #FFFFFA;
+    --bg-cream: #FCEBA6;
+    --bg-dark: #1C1B17;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    --gradient-warm: linear-gradient(135deg, #D4A574 0%, #C41E3A 100%);
-    --gradient-hero: linear-gradient(135deg, rgba(44, 36, 23, 0.95) 0%, rgba(139, 69, 19, 0.85) 100%);
+    /* Gradients - Brand Colors */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    --gradient-warm: linear-gradient(135deg, #F5B700 0%, #FEC33A 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(28, 27, 23, 0.95) 0%, rgba(26, 26, 26, 0.90) 100%);
 
-    /* Typography */
-    --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-secondary: 'Playfair Display', Georgia, serif;
+    /* Typography - Brand Fonts: Rubik & Poppins */
+    --font-primary: 'Rubik', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Font Sizes (Fluid Typography) */
     --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -85,14 +85,14 @@
     --radius-2xl: 24px;
     --radius-full: 9999px;
 
-    /* Shadows */
+    /* Shadows - Updated with brand colors */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    --shadow-card: 0 4px 20px rgba(212, 165, 116, 0.15);
-    --shadow-card-hover: 0 8px 30px rgba(212, 165, 116, 0.25);
+    --shadow-card: 0 4px 20px rgba(245, 183, 0, 0.15);
+    --shadow-card-hover: 0 8px 30px rgba(245, 183, 0, 0.25);
 
     /* Transitions */
     --transition-fast: 150ms ease;
@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-img-placeholder {
-    background: linear-gradient(135deg, rgba(212, 165, 116, 0.3) 0%, rgba(139, 69, 19, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(245, 183, 0, 0.3) 0%, rgba(254, 195, 58, 0.3) 100%);
     border-radius: var(--radius-2xl);
     aspect-ratio: 1;
     display: flex;
@@ -1404,7 +1404,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonio-rating i {
-    color: #FFD700;
+    color: var(--color-primary);
     font-size: var(--fs-sm);
 }
 
@@ -1646,7 +1646,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
+    box-shadow: 0 0 0 3px rgba(245, 183, 0, 0.2);
 }
 
 .form-group input::placeholder,
